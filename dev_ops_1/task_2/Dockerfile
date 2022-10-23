@@ -1,5 +1,8 @@
 FROM ubuntu
 
+ARG APP_ENV=stock_products
+ENV APP_ENV="${APP_ENV}"
+
 WORKDIR /stocks_products
 
 COPY ./stocks_products .
